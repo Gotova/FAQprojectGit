@@ -1,9 +1,8 @@
 from django import forms
-from .models import Post
+from .models import *
 
 
-class ImageForm(forms.ModelForm):
-    """Form for the image model"""
+class HotelForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'image')
+        fields = ['name', 'hotel_Main_Img']
